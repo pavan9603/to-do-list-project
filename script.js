@@ -1,6 +1,6 @@
 
 
-    <script>
+    <script src="js/script.js">
         document.addEventListener('DOMContentLoaded', () => {
             // DOM Elements
             const taskInput = document.getElementById('taskInput');
