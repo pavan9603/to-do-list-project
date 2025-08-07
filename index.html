@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="js.js" type="text/Javascript">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My To-Do List</h1>
+            <p class="subtitle">Get things done, one task at a time</p>
+        </header>
+
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task..." aria-label="Task input">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <div id="taskList" class="task-list">
+            <!-- Tasks will be added here dynamically -->
+            <div class="empty-state" id="emptyState">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7802a46f-0dae-44d0-92fb-f5d7112cb572.png" alt="Clipboard with a checklist - no tasks to display yet">
+                <h2>No tasks yet!</h2>
+                <p>Add your first task using the input above</p>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            <span id="totalCount">0</span> total tasks | 
+            <span id="completedCount">0</span> completed
+        </div>
+    </div>
+
+    
+
